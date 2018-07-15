@@ -385,7 +385,7 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 
 	}
 
-	@Override
+	//@Override
 	public void mouseOverClick(WebElement elemove, WebElement eleclick) {
 		Actions builder = new Actions(driver);
 		builder.moveToElement(elemove).perform();
@@ -403,4 +403,10 @@ public class WebDriverServiceImpl extends WebDriverListener implements WebDriver
 		driver.getKeyboard().sendKeys(Keys.ESCAPE);
 	}
 
+	public String getCurrentURL()
+	{
+		return driver.getCurrentUrl();
+		
+	}
+	
 }
