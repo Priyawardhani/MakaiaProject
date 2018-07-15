@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LeafTap]">
+  <parameter name="uname" value="DemoSalesManager"/>
+  <parameter name="pwd" value="crmsfa"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps"/>
+  <test thread-count="5" name="Leads(failed)">
+    <classes>
+      <class name="tests.Delete">
+        <methods>
+          <include name="afterClass"/>
+          <include name="deleteLead"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.Delete -->
+    </classes>
+  </test> <!-- Leads(failed) -->
+</suite> <!-- Failed suite [LeafTap] -->

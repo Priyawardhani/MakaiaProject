@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LeafTaps]">
+  <test thread-count="5" name="Leads(failed)">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.Delete">
+        <methods>
+          <include name="deleteLead"/>
+        </methods>
+      </class> <!-- tests.Delete -->
+      <class name="tests.MergeLead">
+        <methods>
+          <include name="mergeLead"/>
+        </methods>
+      </class> <!-- tests.MergeLead -->
+    </classes>
+  </test> <!-- Leads(failed) -->
+</suite> <!-- Failed suite [LeafTaps] -->
