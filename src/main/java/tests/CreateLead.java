@@ -36,7 +36,7 @@ public class CreateLead extends PreAndPost{
 		type(locateElement("id", "createLeadForm_primaryEmail"), email);
 		type(locateElement("id", "createLeadForm_primaryPhoneNumber"),phone);
 		click(locateElement("class", "smallSubmit"));*/
-		new MyHomePage(driver,test)
+		new MyHomePage()
 		.clickLeads()
 		.clickCreateLeads()
 		.typeCompName(cName)
